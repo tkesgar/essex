@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/lib.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/a3a3fb6c87.js"></script>
+
+  </head>
+  <body>
+
+    <!-- Loading screen -->
+    <div id="loading">
+      <style>
+        #loading {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 1000;
+
+          background: #fff;
+          color: #888;
+
+          text-align: center;
+        }
+        #loadingCenter {
+          position: absolute;
+          width: 100%;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        .uil-default-css {
+          margin: 0 auto;
+        }
+      </style>
+      <div id="loadingCenter">
+        <span class="sr-only">Loading...</span>
+
+        <!-- http://loading.io/loader/?use=eyJzaXplIjozMCwic3BlZWQiOiIzIiwiY2JrIjoiI2ZmZmZmZiIsImMxIjoiIzg4ODg4OCIsImMyIjoiNyIsImMzIjoiMTAiLCJjNCI6IjIwIiwiYzUiOiI1IiwiYzYiOiIzMCIsInR5cGUiOiJkZWZhdWx0In0= -->
+        <style>
+          @-webkit-keyframes uil-default-anim {
+            0% {
+                opacity: 1
+            }
+            100% {
+                opacity: 0
+            }
+          }
+          @keyframes uil-default-anim {
+            0% {
+                opacity: 1
+            }
+            100% {
+                opacity: 0
+            }
+          }
+          .uil-default-css > div:nth-of-type(1) {
+            -webkit-animation: uil-default-anim 1s linear infinite;
+            animation: uil-default-anim 1s linear infinite;
+            -webkit-animation-delay: -0.5s;
+            animation-delay: -0.5s;
+          }
+          .uil-default-css {
+            position: relative;
+            background: none;
+            width: 200px;
+            height: 200px;
+          }
+          .uil-default-css > div:nth-of-type(2) {
+            -webkit-animation: uil-default-anim 1s linear infinite;
+            animation: uil-default-anim 1s linear infinite;
+            -webkit-animation-delay: -0.4166666666666667s;
+            animation-delay: -0.4166666666666667s;
+          }
+          .uil-default-css {
+            position: relative;
+            background: none;
+            width: 200px;
+            height: 200px;
+          }
+          .uil-default-css > div:nth-of-type(3) {
+            -webkit-animation: uil-default-anim 1s linear infinite;
+            animation: uil-default-anim 1s linear infinite;
+            -webkit-animation-delay: -0.33333333333333337s;
+            animation-delay: -0.33333333333333337s;
+          }
+          .uil-default-css {
+            position: relative;
+            background: none;
+            width: 200px;
+            height: 200px;
+          }
+          .uil-default-css > div:nth-of-type(4) {
+            -webkit-animation: uil-default-anim 1s linear infinite;
+            animation: uil-default-anim 1s linear infinite;
+            -webkit-animation-delay: -0.25s;
+            animation-delay: -0.25s;
+          }
+          .uil-default-css {
+            position: relative;
+            background: none;
+            width: 200px;
+            height: 200px;
+          }
+          .uil-default-css > div:nth-of-type(5) {
+            -webkit-animation: uil-default-anim 1s linear infinite;
+            animation: uil-default-anim 1s linear infinite;
+            -webkit-animation-delay: -0.16666666666666669s;
+            animation-delay: -0.16666666666666669s;
+          }
+          .uil-default-css {
+            position: relative;
+            background: none;
+            width: 200px;
+            height: 200px;
+          }
+          .uil-default-css > div:nth-of-type(6) {
+            -webkit-animation: uil-default-anim 1s linear infinite;
+            animation: uil-default-anim 1s linear infinite;
+            -webkit-animation-delay: -0.08333333333333331s;
+            animation-delay: -0.08333333333333331s;
+          }
+          .uil-default-css {
+            position: relative;
+            background: none;
+            width: 200px;
+            height: 200px;
+          }
+          .uil-default-css > div:nth-of-type(7) {
+            -webkit-animation: uil-default-anim 1s linear infinite;
+            animation: uil-default-anim 1s linear infinite;
+            -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+          }
+          .uil-default-css {
+            position: relative;
+            background: none;
+            width: 200px;
+            height: 200px;
+          }
+          .uil-default-css > div:nth-of-type(8) {
+            -webkit-animation: uil-default-anim 1s linear infinite;
+            animation: uil-default-anim 1s linear infinite;
+            -webkit-animation-delay: 0.08333333333333337s;
+            animation-delay: 0.08333333333333337s;
+          }
+          .uil-default-css {
+            position: relative;
+            background: none;
+            width: 200px;
+            height: 200px;
+          }
+          .uil-default-css > div:nth-of-type(9) {
+            -webkit-animation: uil-default-anim 1s linear infinite;
+            animation: uil-default-anim 1s linear infinite;
+            -webkit-animation-delay: 0.16666666666666663s;
+            animation-delay: 0.16666666666666663s;
+          }
+          .uil-default-css {
+            position: relative;
+            background: none;
+            width: 200px;
+            height: 200px;
+          }
+          .uil-default-css > div:nth-of-type(10) {
+            -webkit-animation: uil-default-anim 1s linear infinite;
+            animation: uil-default-anim 1s linear infinite;
+            -webkit-animation-delay: 0.25s;
+            animation-delay: 0.25s;
+          }
+          .uil-default-css {
+            position: relative;
+            background: none;
+            width: 200px;
+            height: 200px;
+          }
+          .uil-default-css > div:nth-of-type(11) {
+            -webkit-animation: uil-default-anim 1s linear infinite;
+            animation: uil-default-anim 1s linear infinite;
+            -webkit-animation-delay: 0.33333333333333337s;
+            animation-delay: 0.33333333333333337s;
+          }
+          .uil-default-css {
+            position: relative;
+            background: none;
+            width: 200px;
+            height: 200px;
+          }
+          .uil-default-css > div:nth-of-type(12) {
+            -webkit-animation: uil-default-anim 1s linear infinite;
+            animation: uil-default-anim 1s linear infinite;
+            -webkit-animation-delay: 0.41666666666666663s;
+            animation-delay: 0.41666666666666663s;
+          }
+          .uil-default-css {
+            position: relative;
+            background: none;
+            width: 200px;
+            height: 200px;
+          }
+        </style>
+        <div class='uil-default-css' style='transform:scale(0.5);'>
+          <div style=
+          'top:80px;left:93px;width:14px;height:40px;background:#888888;-webkit-transform:rotate(0deg) translate(0,-60px);transform:rotate(0deg) translate(0,-60px);border-radius:10px;position:absolute;'>
+          </div>
+          <div style=
+          'top:80px;left:93px;width:14px;height:40px;background:#888888;-webkit-transform:rotate(30deg) translate(0,-60px);transform:rotate(30deg) translate(0,-60px);border-radius:10px;position:absolute;'>
+          </div>
+          <div style=
+          'top:80px;left:93px;width:14px;height:40px;background:#888888;-webkit-transform:rotate(60deg) translate(0,-60px);transform:rotate(60deg) translate(0,-60px);border-radius:10px;position:absolute;'>
+          </div>
+          <div style=
+          'top:80px;left:93px;width:14px;height:40px;background:#888888;-webkit-transform:rotate(90deg) translate(0,-60px);transform:rotate(90deg) translate(0,-60px);border-radius:10px;position:absolute;'>
+          </div>
+          <div style=
+          'top:80px;left:93px;width:14px;height:40px;background:#888888;-webkit-transform:rotate(120deg) translate(0,-60px);transform:rotate(120deg) translate(0,-60px);border-radius:10px;position:absolute;'>
+          </div>
+          <div style=
+          'top:80px;left:93px;width:14px;height:40px;background:#888888;-webkit-transform:rotate(150deg) translate(0,-60px);transform:rotate(150deg) translate(0,-60px);border-radius:10px;position:absolute;'>
+          </div>
+          <div style=
+          'top:80px;left:93px;width:14px;height:40px;background:#888888;-webkit-transform:rotate(180deg) translate(0,-60px);transform:rotate(180deg) translate(0,-60px);border-radius:10px;position:absolute;'>
+          </div>
+          <div style=
+          'top:80px;left:93px;width:14px;height:40px;background:#888888;-webkit-transform:rotate(210deg) translate(0,-60px);transform:rotate(210deg) translate(0,-60px);border-radius:10px;position:absolute;'>
+          </div>
+          <div style=
+          'top:80px;left:93px;width:14px;height:40px;background:#888888;-webkit-transform:rotate(240deg) translate(0,-60px);transform:rotate(240deg) translate(0,-60px);border-radius:10px;position:absolute;'>
+          </div>
+          <div style=
+          'top:80px;left:93px;width:14px;height:40px;background:#888888;-webkit-transform:rotate(270deg) translate(0,-60px);transform:rotate(270deg) translate(0,-60px);border-radius:10px;position:absolute;'>
+          </div>
+          <div style=
+          'top:80px;left:93px;width:14px;height:40px;background:#888888;-webkit-transform:rotate(300deg) translate(0,-60px);transform:rotate(300deg) translate(0,-60px);border-radius:10px;position:absolute;'>
+          </div>
+          <div style=
+          'top:80px;left:93px;width:14px;height:40px;background:#888888;-webkit-transform:rotate(330deg) translate(0,-60px);transform:rotate(330deg) translate(0,-60px);border-radius:10px;position:absolute;'>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-container">
+
+      <div class="col-wide">
+        <div id="wideContent">
+          <div class="layer" data-depth="0.2">
+            <img id="wideImage">
+          </div>
+        </div>
+        <div class="title">
+          <h1>Ted Kesgar</h1>
+          <p>I am a programmer, digital artist, and writer.</p>
+        </div>
+        <div class="caption">Source: <a id="wideImageSource"></a></div>
+
+      </div>
+
+      <div class="col-narrow">
+
+        <h2>Programming</h2>
+        <ul class="nav nav-pills">
+          <li role="presentation">
+            <a href="https://github.com/tkesgar"><i class="fa fa-github"></i> GitHub</a>
+          </li>
+          <li role="presentation">
+            <a href="https://labs.tkesgar.com"><i class="fa fa-flask"></i> labs.tkesgar.com</a>
+          </li>
+        </ul>
+
+        <h2>Artworks</h2>
+        <ul class="nav nav-pills">
+          <li role="presentation">
+            <a href="http://tkesgar.deviantart.com"><i class="fa fa-deviantart"></i> DeviantArt</a>
+          </li>
+        </ul>
+
+        <h2>Writing</h2>
+        <ul class="nav nav-pills">
+          <li role="presentation">
+            <a href="https://yahallo.wordpress.com"><i class="fa fa-wordpress"></i> Blog</a>
+          </li>
+          <li role="presentation">
+            <a href="https://tkesgar.github.io"><i class="fa fa-github"></i> Programming Blog</a>
+          </li>
+        </ul>
+
+        <h2>Social Media</h2>
+        <ul class="nav-social">
+          <li>
+            <a class="btn btn-default btn-facebook" href="https://facebook.com/tkesgar"><i class="fa fa-fw fa-facebook"></i> Facebook</a>
+          </li>
+          <li class="twitter">
+            <a class="btn btn-default btn-twitter" href="https://twitter.com/tkesgar"><i class="fa fa-fw fa-twitter"></i> Twitter</a>
+          </li>
+        </ul>
+
+        <div>
+          <h2>Contact</h2>
+          <p>Feel free to contact me via any of the social media above. You can also <a href="mailto:&#116;&#046;&#107;&#101;&#115;&#103;&#097;&#114;&#064;&#108;&#105;&#118;&#101;&#046;&#099;&#111;&#109;">send me an e-mail message</a>.</p>
+        </div>
+
+        <div class="copyright">
+          <hr>
+          <p>&copy; 2016 <a href="https://tkesgar.com">Ted Kesgar</a><br>View the source code for this website <a href="https://github.com/tkesgar/tkesgar.com" target="_blank">here</a>.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="js/lib.js"></script>
+    <script src="js/app.js"></script>
+    <script>require('app')</script>
+  </body>
+</html>
