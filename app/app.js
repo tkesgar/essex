@@ -5,13 +5,13 @@ import $ from 'jquery';
 // wide image library
 var wideImages = [
   {
-    src         : "//static.zerochan.net/Makise.Kurisu.full.1203172.jpg",
+    src         : "http://static.zerochan.net/Makise.Kurisu.full.1203172.jpg",
     ref_url     : "http://www.zerochan.net/1203172",
     ref_name    : "Zerochan",
     content_pos : "right"
   },
   {
-    src         : "//static.zerochan.net/Nakamura.Yuri.full.418763.jpg",
+    src         : "http://static.zerochan.net/Nakamura.Yuri.full.418763.jpg",
     ref_url     : "http://www.zerochan.net/418763",
     ref_name    : "Zerochan",
     content_pos : "left"
