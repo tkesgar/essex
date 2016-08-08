@@ -163,39 +163,43 @@ a {
   }
 }
 
-// Override with flex column for large screens
-@media (min-width: @screen-md-min) {
+// Only use flex with JS
+body.col-with-js {
 
-  // Flex column styles
-  .col-container {
-    display: flex;
-    width: 100%;
-    height: 100%;
-  }
-  .col-narrow {
-    flex: 1;
-    overflow-y: auto;
-  }
-  .col-wide {
-    flex: 2;
-    overflow: hidden;
-  }
+  // Override with flex column for large screens
+  @media (min-width: @screen-md-min) {
 
-  // Override flex for larger screen
-  @media (min-width: @screen-lg-min) {
-    .col-narrow { flex: 1; }
-    .col-wide   { flex: 3; }
-  }
+    // Flex column styles
+    .col-container {
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
+    .col-narrow {
+      flex: 1;
+      overflow-y: auto;
+    }
+    .col-wide {
+      flex: 2;
+      overflow: hidden;
+    }
 
-  // Additional styles for content
-  #wideContent {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    // Override flex for larger screen
+    @media (min-width: @screen-lg-min) {
+      .col-narrow { flex: 1; }
+      .col-wide   { flex: 3; }
+    }
+
+    // Additional styles for content
+    #wideContent {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 
@@ -284,6 +288,9 @@ a {
 .copyright {
   font-size: 0.9em;
   color: #999;
+  border-top: 1px solid #ccc;
+  margin-top: 3em;
+  padding-top: 1.5em;
 
   a {
     color: #666;
