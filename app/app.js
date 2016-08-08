@@ -1,7 +1,6 @@
 'use strict';
 
 import wideImages from 'wide-images';
-import $ from 'jquery';
 
 $(document).ready(() => {
 

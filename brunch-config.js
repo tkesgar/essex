@@ -1,14 +1,5 @@
 module.exports = {
 
-  npm: {
-    globals: {
-      '$': 'jquery'
-    },
-    styles: {
-      'bootstrap': ['dist/css/bootstrap.css']
-    }
-  },
-
   files: {
     javascripts: {
       joinTo: {
