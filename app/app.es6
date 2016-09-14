@@ -1,14 +1,15 @@
 'use strict';
 
-import wideImages from 'wide-images';
+import data from './data';
 
 $(document).ready(() => {
 
   // select wideImage content
-  let image = wideImages[Math.floor(Math.random() * wideImages.length)];
+  let images = data.images;
+  let image = images[Math.floor(Math.random() * images.length)];
 
   // only use flex with JS
-  $('body').addClass('col-with-js')
+  $('body').addClass('col-with-js');
 
   // set wideImage and wideImageSource content
   $('#wideImage').attr('src', image.src);

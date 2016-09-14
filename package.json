@@ -27,7 +27,6 @@
     "postcss-font-magician": "^1.4.0",
     "uglify-js-brunch": "^2.0.1"
   },
-  "homepage": "https://github.com/tkesgar/brunch-plain-simple#readme",
-  "main": "brunch-config.js",
+  "homepage": "https://tkesgar.com",
   "private": "true"
 }
