@@ -76,6 +76,12 @@
 //  Base styles
 // ===========================================================================
 
+// Universal selector for smooth transition
+// https://css-tricks.com/things-it-might-be-funuseful-to-try-the-universal-selector-on/
+* {
+  transition: all 0.25s;
+}
+
 // Viewport width and height for html and body
 html, body {
   width: 100%;
@@ -84,14 +90,23 @@ html, body {
 
 // Base font
 body {
-  font-family: 'Reem Kufi', sans-serif;
+  font-family: 'Cabin', sans-serif;
   font-size: 16px;
 }
 
-// Universal selector for smooth transition
-// https://css-tricks.com/things-it-might-be-funuseful-to-try-the-universal-selector-on/
-* {
-  transition: all 0.2s;
+// Color + narrow container
+body {
+  background: #eee;
+}
+.container-narrow {
+  background: #fff;
+  max-width: @screen-sm-min;
+}
+
+// Padding for container-narrow
+.container-narrow {
+  padding: 0 40px;
+  padding-top: 40px;
 }
 
 // Restyle a
@@ -103,195 +118,7 @@ a {
   }
 }
 
-// ===========================================================================
-//  Column styles
-// ===========================================================================
-
-// Mobile-first: column for small screens
-.col-wide {
-
-  // Relative position for absolute element anchor
-  position: relative;
-
-  // Full size content
-  #wideContent {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-  }
-
-  // Small caption at bottom-right
-  .caption {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    padding: 0.5em 1em;
-
-    font-size: 0.875em;
-    background: rgba(0, 0, 0, 0.5);
-    color: rgb(255, 255, 255);
-  }
-
-  // Large title at bottom-left
-  .title {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    bottom: 3em;
-    padding: 0.5em 1em;
-
-    background: rgba(0, 0, 0, 0.5);
-    color: rgb(192, 192, 192);
-
-    h1 {
-      font-size: 2em;
-      color: rgb(255, 255, 255);
-    }
-
-    // Override title style at larger screens
-    @media (min-width: @screen-sm-min) {
-      width: auto;
-      left: 2em;
-      bottom: 2em;
-      font-size: 1.25em;
-    }
-  }
-}
-
-// Only use flex with JS
-body.col-with-js {
-
-  // Override with flex column for large screens
-  @media (min-width: @screen-md-min) {
-
-    // Flex column styles
-    .col-container {
-      display: flex;
-      width: 100%;
-      height: 100%;
-    }
-    .col-narrow {
-      flex: 1;
-      overflow-y: auto;
-    }
-    .col-wide {
-      flex: 2;
-      overflow: hidden;
-    }
-
-    // Override flex for larger screen
-    @media (min-width: @screen-lg-min) {
-      .col-narrow { flex: 1; }
-      .col-wide   { flex: 3; }
-    }
-
-    // Additional styles for content
-    #wideContent {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-  }
-}
-
-// Styles depending on content position
-.col-content-left {
-
-  // Flex order
-  .col-narrow { order: 0 }
-  .col-wide   { order: 1 }
-
-  // Border
-  .col-narrow {
-    border-right: 1px solid #666;
-  }
-}
-.col-content-right {
-
-  // Flex order
-  .col-wide   { order: 0 }
-  .col-narrow { order: 1 }
-
-  // Border
-  .col-narrow {
-    border-left: 1px solid #666;
-  }
-}
-
-// ===========================================================================
-//  Styles for parallax
-// ===========================================================================
-
-#wideContent {
-  .layer {
-    width: 100%;
-    height: 100%;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    transform: scale(1.05, 1.05); // adjust this amount to match parallax depth
-  }
-}
-
-// ===========================================================================
-//  Content styles
-// ===========================================================================
-
-.col-narrow {
-  padding: 1em;
-  text-align: center;
-
-  h2 {
-    font-size: 1.25em;
-  }
-
-  // Override Bootstrap float and block for .nav li
-  .nav {
-    li {
-      float: none;
-      display: inline-block;
-    }
-  }
-}
-
-// Social media nav
-.nav-social {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-
-  li {
-    display: inline-block;
-  }
-}
-
-// Social media button variants
-.btn-facebook {
-  .button-variant(@btn-facebook-color; @btn-facebook-bg; @btn-facebook-border);
-}
-.btn-twitter {
-  .button-variant(@btn-twitter-color; @btn-twitter-bg; @btn-twitter-border);
-}
-
-.copyright {
-  font-size: 0.9em;
-  color: #999;
-  border-top: 1px solid #ccc;
-  margin-top: 3em;
-  padding-top: 1.5em;
-
-  a {
-    color: #666;
-
-    &:hover, &:focus {
-      color: #333;
-    }
-  }
+// Restyle ul
+ul {
+  list-style-type: square;
 }
