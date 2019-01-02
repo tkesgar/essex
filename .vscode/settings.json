@@ -1,0 +1,7 @@
+{
+  "xo.enable": true,
+  "xo.format.enable": true,
+  "javascript.validate.enable": false,
+  "javascript.format.enable": false,
+  "stylelint.enable": true
+}
