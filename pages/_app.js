@@ -13,7 +13,18 @@ export default class App extends NextApp {
     return (
       <>
         <Head>
-          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+          <title>Ted Kesgar</title>
+          <meta name="description" content="Hello, I am Ted Kesgar and this is my homepage containing list of works and some contact information."/>
+
+          <meta name="twitter:card" value="Hello, I am Ted Kesgar and this is my homepage containing list of works and some contact information."/>
+
+          <meta property="og:title" content="Ted Kesgar"/>
+          <meta property="og:type" content="website"/>
+          <meta property="og:url" content="https://www.tkesgar.com/"/>
+          <meta property="og:image" content="/static/site-image.jpg"/>
+          <meta property="og:description" content="Hello, I am Ted Kesgar and this is my homepage containing list of works and some contact information."/>
+
+          <link rel="icon" type="image/png" href="/static/favicon.png"/>
         </Head>
         <Container>
           <Component {...pageProps}/>

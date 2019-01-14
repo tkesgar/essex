@@ -63,3 +63,9 @@ typings/
 
 # next.js build output
 .next
+
+# Project gitignore
+# ------------------------------------------------------------------------------
+
+# next.js export output
+out

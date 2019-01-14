@@ -1,4 +1,64 @@
-@import "variables";
+@import "~normalize.css";
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400i,700');
 
-@import "~bootstrap/scss/bootstrap";
-@import "~bootswatch/dist/yeti/bootswatch";
+// Things It Might Be Fun/Useful to Try the Universal (*) Selector On
+// https://css-tricks.com/things-it-might-be-funuseful-to-try-the-universal-selector-on/
+* {
+  transition: all 0.35s ease;
+}
+
+html {
+  font-family: 'Old Standard TT', serif;
+  font-size: 20px;
+}
+
+body {
+  color: #333;
+  line-height: 1.42857;
+}
+
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.avatar {
+  width: 4rem;
+  height: auto;
+  border-radius: 2rem;
+}
+
+.content {
+  text-align: justify;
+  hyphens: none;
+
+  a {
+    color: #f33;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      border-bottom: 1px solid currentColor;
+    }
+
+    &.badge {
+      margin: 0 0.1rem;
+
+      &:hover {
+        border-bottom: 1px solid transparent;
+      }
+    }
+  }
+
+  ul {
+    list-style-type: square;
+    padding-inline-start: 1rem;
+    text-align: left;
+
+    p {
+      margin-block-start: 0.5em;
+      margin-block-end: 0.5em;
+    }
+  }
+}

@@ -14,7 +14,6 @@
     "dev": "next",
     "build": "next build && next export",
     "start": "serve out",
-    "test": "jest",
     "lint": "xo"
   },
   "husky": {
@@ -23,18 +22,16 @@
     }
   },
   "dependencies": {
-    "bootstrap": "^4.2.1",
-    "bootswatch": "^4.2.1",
     "next": "^7.0.2",
+    "normalize.css": "^8.0.1",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "reactstrap": "^7.0.2",
-    "sharo-scripts": "^0.6.0"
+    "sharo-scripts": "^0.6.1"
   },
   "devDependencies": {
     "husky": "^1.2.0",
-    "jest": "^23.6.0",
+    "serve": "^10.1.1",
     "xo": "^0.23.0"
   },
   "babel": {
@@ -56,19 +53,6 @@
       "postcss-preset-env": {}
     }
   },
-  "browserslist": [
-    "> 1%",
-    "last 1 major version",
-    "not dead",
-    "Chrome >= 45",
-    "Firefox >= 38",
-    "Edge >= 12",
-    "Explorer >= 10",
-    "iOS >= 9",
-    "Safari >= 9",
-    "Android >= 4.4",
-    "Opera >= 30"
-  ],
   "xo": {
     "extends": [
       "xo-react"
@@ -78,13 +62,12 @@
     "semicolon": false,
     "settings": {
       "react": {
-        "version": "16.6.0"
+        "version": "16.7.0"
       },
       "import/resolver": {
         "node": {
           "extensions": [
             ".js",
-            ".md",
             ".mdx",
             ".scss"
           ]
