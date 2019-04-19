@@ -12,8 +12,8 @@
   "homepage": "https://github.com/tkesgar/tkesgar.com#readme",
   "scripts": {
     "dev": "next",
-    "build": "next build && next export",
-    "start": "serve out",
+    "build": "next build",
+    "start": "next start",
     "lint": "xo"
   },
   "husky": {
@@ -22,62 +22,28 @@
     }
   },
   "dependencies": {
-    "next": "^7.0.2",
+    "@tkesgar/sharo-babel": "^0.1.0",
+    "@tkesgar/sharo-next": "^0.2.0",
+    "next": "^8.1.0",
+    "node-sass": "^4.11.0",
     "normalize.css": "^8.0.1",
-    "prop-types": "^15.6.2",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "sharo-scripts": "^0.6.1"
+    "postcss-preset-env": "^6.6.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "devDependencies": {
+    "eslint-config-sharo-scripts": "^0.2.0",
     "husky": "^1.2.0",
-    "serve": "^10.1.1",
-    "xo": "^0.23.0"
-  },
-  "babel": {
-    "presets": [
-      [
-        "next/babel",
-        {
-          "styled-jsx": {
-            "plugins": [
-              "styled-jsx-plugin-postcss"
-            ]
-          }
-        }
-      ]
-    ]
-  },
-  "postcss": {
-    "plugins": {
-      "postcss-preset-env": {}
-    }
+    "xo": "^0.24.0"
   },
   "xo": {
-    "extends": [
-      "xo-react"
-    ],
-    "parser": "babel-eslint",
+    "extends": "sharo-scripts",
     "space": 2,
     "semicolon": false,
-    "settings": {
-      "react": {
-        "version": "16.7.0"
-      },
-      "import/resolver": {
-        "node": {
-          "extensions": [
-            ".js",
-            ".mdx",
-            ".scss"
-          ]
-        }
-      }
-    }
+    "env": "browser"
   },
   "stylelint": {
-    "extends": [
-      "sharo-scripts/stylelint"
-    ]
+    "extends": "stylelint-config-recommended-scss"
   }
 }

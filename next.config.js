@@ -1,11 +1,4 @@
-const withSharo = require('sharo-scripts/next')
+const withSharo = require('@tkesgar/sharo-next')
 
 // Pakai configuration dari sharo-scripts.
-module.exports = withSharo({
-  webpack(config) {
-    // Tambah file .md dan .mdx supaya bisa autoresolve.
-    config.resolve.extensions.push('.md', '.mdx', '.scss')
-
-    return config
-  }
-})
+module.exports = withSharo()
