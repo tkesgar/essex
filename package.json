@@ -30,7 +30,8 @@
     "postcss-preset-env": "^6.6.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "worker-loader": "^2.0.0"
   },
   "devDependencies": {
     "eslint-config-sharo-scripts": "^0.2.0",
