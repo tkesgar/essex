@@ -36,6 +36,9 @@
   "devDependencies": {
     "eslint-config-sharo-scripts": "^0.2.0",
     "husky": "^1.2.0",
+    "stylelint": "^10.0.1",
+    "stylelint-config-recommended-scss": "^3.3.0",
+    "stylelint-scss": "^3.6.0",
     "xo": "^0.24.0"
   },
   "xo": {
