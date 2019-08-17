@@ -3,12 +3,10 @@ import React from 'react'
 import Template from '../components/template'
 import Works from '../components/works'
 
-export default class IndexPage extends React.Component {
-  render() {
-    return (
-      <Template>
-        <Works/>
-      </Template>
-    )
-  }
+export default function WorksPage() {
+  return (
+    <Template>
+      <Works/>
+    </Template>
+  )
 }
