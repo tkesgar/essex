@@ -8,7 +8,8 @@
     "build": "next build && next export",
     "lint:scripts": "eslint . --ext js,ts,tsx",
     "lint:styles": "stylelint styles/**",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "serve": "serve out"
   },
   "dependencies": {
     "@tkesgar/sharo-babel": "^0.1.1",
