@@ -7,7 +7,7 @@
     "start": "next",
     "build": "next build && next export",
     "lint:scripts": "eslint . --ext js,ts,tsx",
-    "lint:styles": "stylelint styles/**",
+    "lint:styles": "stylelint **/*.{css,scss}",
     "format": "prettier --write ."
   },
   "dependencies": {
