@@ -1,8 +1,9 @@
 ## About me
 
-Hello, I am an ITB graduate with a bachelor's degree in Informatics Engineering.
-Currently I work at Bukalapak as front-end engineer and live in Jakarta. While I
-am not writing codes, I draw illustrations and write comics.
+Hi there, my name is Ted Kesgar. I am an ITB graduate with a bachelor's degree
+in Informatics Engineering. Currently I work at Bukalapak as front-end engineer
+and live in Jakarta. When I am not writing codes, I draw illustrations and write
+comics.
 
 ## Links
 
