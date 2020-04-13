@@ -14,7 +14,7 @@ export default function MarkdownContent({
 
   return (
     <Template buildDate={buildDate}>
-      <div dangerouslySetInnerHTML={{ __html: content }} />
+      <div className="markdown" dangerouslySetInnerHTML={{ __html: content }} />
     </Template>
   );
 }
