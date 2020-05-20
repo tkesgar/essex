@@ -34,7 +34,7 @@ export default function Template({
         </ul>
       </header>
       <section className="content">{children}</section>
-      <footer className="footer">
+      <footer className="footer" style={{ visibility: Boolean(buildDate) }}>
         Last updated: {moment(buildDate).fromNow()}
       </footer>
     </div>
