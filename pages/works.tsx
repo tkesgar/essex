@@ -1,6 +1,6 @@
 import * as React from "react";
 import { GetStaticProps } from "next";
-import { createGetMarkdownStaticProps } from "../utils";
+import { getMarkdown } from "../utils";
 import Markdown from "../components/Markdown";
 import Header from "../components/Header";
 
@@ -19,6 +19,10 @@ export default function Index({ content }: IndexProps): JSX.Element {
   );
 }
 
-export const getStaticProps: GetStaticProps = createGetMarkdownStaticProps(
-  "works"
-);
+export const getStaticProps: GetStaticProps<IndexProps> = async function () {
+  const content = await getMarkdown("works");
+
+  return {
+    props: { content },
+  };
+};
