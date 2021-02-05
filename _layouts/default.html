@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
+<html>
   {%- include head.html -%}
 
-  <body>
-    <div class="main-container">
+  <body class="text-gray-700">
+    <div class="flex flex-col min-h-screen">
       {%- include header.html -%}
 
-      <main class="main-content" aria-label="Content">
-        <div class="wrapper">
-          {{ content }}
-        </div>
+      <main class="flex-auto">
+        {{ content }}
       </main>
 
       {%- include footer.html -%}

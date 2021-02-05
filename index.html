@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<div class="max-w-2xl mx-auto my-8 px-4">
+  {%- if site.posts.size > 0 -%}
+    <ul class="post-list">
+      {%- for post in site.posts -%}
+      <li class="mb-4">
+        <span class="text-sm text-gray-400">{{ post.date | date: "%B %-d, %Y" }}</span>
+        <h2 class="text-lg text-purple-500 hover:underline">
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h2>
+      </li>
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+</div>

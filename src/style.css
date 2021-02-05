@@ -1,0 +1,47 @@
+@import "./github.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.page-content {
+  @apply text-lg;
+
+  p {
+    @apply mb-4;
+    @apply text-justify;
+  }
+
+  a {
+    @apply text-purple-500;
+    @apply hover:underline;
+  }
+}
+
+.blog-content {
+  @apply text-lg;
+  @apply font-mono;
+
+  p,
+  figure {
+    @apply mb-4;
+  }
+
+  a {
+    @apply text-purple-500;
+    @apply hover:underline;
+  }
+
+  p code {
+    @apply border border-gray-200;
+  }
+
+  .highlight {
+    @apply border border-gray-200;
+    @apply p-2;
+  }
+
+  .rouge-table .gutter {
+    @apply pr-4;
+  }
+}

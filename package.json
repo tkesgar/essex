@@ -1,0 +1,19 @@
+{
+  "name": "essex",
+  "scripts": {
+    "style:watch": "postcss -w src/style.css -o assets/style.css",
+    "style:build": "NODE_ENV=production postcss src/style.css -o assets/style.css",
+    "blog:watch": "jekyll serve",
+    "blog:build": "jekyll build",
+    "build": "npm run style:build && npm run blog:build"
+  },
+  "dependencies": {
+    "cssnano": "^4.1.10",
+    "postcss": "^8.2.4",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.0",
+    "postcss-nested": "^5.0.3",
+    "postcss-preset-env": "^6.7.0",
+    "tailwindcss": "^2.0.2"
+  }
+}

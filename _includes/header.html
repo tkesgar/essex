@@ -1,10 +1,11 @@
-<header class="main-header">
-  <div class="main-header-left">
-    <div class="main-header-title">{{ page.title }}</div>
-    <div><a href="{{ page.url }}" class="main-header-link">{{ page.url }}</a></div>
+<header class="p-4 border-b border-gray-200 flex items-center justify-between">
+  <div class="flex-initial max-w-full overflow-hidden mr-4">
+    {% if page.show_header_title or layout.show_header_title %}
+      <div class="font-bold">{{ page.title }}</div>
+      <a href="{{ page.url | relative_url }}" class="block font-mono text-xs text-gray-400">{{ page.url }}</a>
+    {% endif %}
   </div>
-  <div class="main-header-right">
-    <a href="/" class="main-header-brand">.tkesgar</a>
-    (<a href="/about">about</a>)
+  <div class="flex-grow-0 flex-shrink-0 max-w-full text-right">
+    <a href="/" class="block font-bold text-purple-500">.tkesgar</a>
   </div>
 </header>
