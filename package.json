@@ -5,10 +5,12 @@
     "style:build": "NODE_ENV=production postcss src/style.css -o assets/style.css",
     "blog:watch": "jekyll serve",
     "blog:build": "jekyll build",
-    "build": "npm run style:build && npm run blog:build"
+    "build": "npm run style:build && npm run blog:build",
+    "clean": "del assets/style.css _site"
   },
   "dependencies": {
     "cssnano": "^4.1.10",
+    "del-cli": "^3.0.1",
     "postcss": "^8.2.4",
     "postcss-cli": "^8.3.1",
     "postcss-import": "^14.0.0",
