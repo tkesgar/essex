@@ -1,9 +1,0 @@
-{
-  "eslint.enable": true,
-  "javascript.validate.enable": false,
-  "javascript.format.enable": false,
-  "stylelint.enable": true,
-  "css.validate": false,
-  "scss.validate": false,
-  "editor.formatOnSave": true
-}
