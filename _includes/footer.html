@@ -1,35 +1,8 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
-    </div>
-
-  </div>
-
+<footer class="main-footer">
+  <ul class="main-footer-links">
+    <li><a href="https://twitter.com/tkesgar">Twitter</a></li>
+    <li><a href="https://github.com/tkesgar">GitHub</a></li>
+    <li><a href="mailto:t.kesgar@outlook.com">Email</a></li>
+  </ul>
+  <p class="main-footer-updated">Last updated: {{ "now" | date: "%Y-%m-%d" }}</p>
 </footer>

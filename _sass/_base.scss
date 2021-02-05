@@ -1,0 +1,14 @@
+body {
+  font-family: "Anonymous Pro", monospace,
+    // https://css-tricks.com/snippets/css/system-font-stack/#method-1-system-fonts-at-the-element-level
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333;
+}
+
+// https://css-tricks.com/box-sizing/#universal-box-sizing-with-inheritance
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
