@@ -1,5 +1,6 @@
 {
   "name": "essex",
+  "private": true,
   "scripts": {
     "style:watch": "postcss -w src/style.css -o assets/style.css",
     "style:build": "NODE_ENV=production postcss src/style.css -o assets/style.css",
@@ -9,13 +10,13 @@
     "clean": "del assets/style.css _site"
   },
   "dependencies": {
-    "cssnano": "^4.1.10",
+    "cssnano": "^5.0.5",
     "del-cli": "^3.0.1",
-    "postcss": "^8.2.4",
+    "postcss": "^8.3.0",
     "postcss-cli": "^8.3.1",
-    "postcss-import": "^14.0.0",
-    "postcss-nested": "^5.0.3",
+    "postcss-import": "^14.0.2",
+    "postcss-nested": "^5.0.5",
     "postcss-preset-env": "^6.7.0",
-    "tailwindcss": "^2.0.2"
+    "tailwindcss": "^2.1.4"
   }
 }
